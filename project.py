@@ -60,7 +60,7 @@ if choice == 'Object Classification':
     st.write('Dataset: ~', 6000, 'images')
     st.write('Total params: ', 5409665)
     st.write('Training time: ', 45, 'minutes')
-    tab_acc, tab_confusion_matrix, tab_classification_report = st.tabs(["Accuracy & Loss", "Confusion Matrix", "Classification Reprt"])
+    tab_acc, tab_confusion_matrix, tab_classification_report = st.tabs(["Accuracy & Loss", "Confusion Matrix", "Classification Report"])
     with tab_acc:
         st.markdown('***Accuracy & Loss***')
         st.write('Train accuracy: ', 0.9882, 'Train loss: ', 0.0319)
