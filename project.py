@@ -45,17 +45,17 @@ if choice == 'Object Classification':
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image('cephalopholis_cyanostigma_8.jpg', caption = 'Fish 🐟')
+        st.image('image/cephalopholis_cyanostigma_8.jpg', caption = 'Fish 🐟')
 
     with col2:
-        st.image('brown-glass7.jpg', caption = 'Glass 🥂')
+        st.image('image/brown-glass7.jpg', caption = 'Glass 🥂')
 
     col3, col4 = st.columns(2)
     with col3:
-        st.image('battery201.jpg', caption = 'Metal_Battery 🔋')
+        st.image('image/battery201.jpg', caption = 'Metal_Battery 🔋')
 
     with col4:
-        st.image('53I3SC0WUB17.jpg', caption = 'Plastic 🏭')
+        st.image('image/new_53I3SC0WUB17.jpg', caption = 'Plastic 🏭')
     st.write("### 1. CNN - 2 Classes: FISH - GARBAGE")
     st.write('Dataset: ~', 6000, 'images')
     st.write('Total params: ', 5409665)
@@ -67,10 +67,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.9708, 'Test loss: ', 0.1034)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('2_Classes_CNN_CF.jpg', width = 500)
+        st.image('image/new_2_Classes_CNN_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('2_Classes_CNN_R.jpg', width = 600)
+        st.image('image/new_2_Classes_CNN_R.jpg', width = 600)
 
     st.write("### 2. CNN - 5 Classes: FISH - GLASS - METAL_BATTERY - PLASTIC - OTHERS")
     st.write('Total params: ', 3735717)
@@ -83,10 +83,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.8637, 'Test loss: ', 0.4434)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('5_Classes_CNN_CF.jpg', width = 500)
+        st.image('image/new_5_Classes_CNN_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('5_Classes_CNN_R.jpg', width = 600)
+        st.image('image/new_5_Classes_CNN_R.jpg', width = 600)
 
     st.write("### 3. CNN & INCEPTION_V3 - 5 Classes: FISH - GLASS - METAL_BATTERY - PLASTIC - OTHERS")
     st.write('Dataset: ~', 6000, 'images')
@@ -99,10 +99,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.8637, 'Test loss: ', 0.4434)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('5_Classes_pretrained_CF.jpg', width = 500)
+        st.image('image/new_5_Classes_pretrained_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('5_Classes_pretrained_R.jpg', width = 600)
+        st.image('image/new_5_Classes_pretrained_R.jpg', width = 600)
 
 
 elif choice == 'Object Detection':
@@ -114,14 +114,14 @@ elif choice == 'Object Detection':
     tab_chart, tab_score= st.tabs(["Chart", "Score"])
     with tab_score:
         st.markdown('***Cunfusion matrix & Classification Report***')
-        st.image('yolo_v4_score.jpg', width = 700)
+        st.image('image/yolo_v4_score.jpg', width = 700)
     with tab_chart:
         st.markdown('***Training Process***')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('chart_yolov4-custom.png')
+            st.image('image/chart_yolov4-custom.png')
         with col2:
-            st.image('v4_chart.png')
+            st.image('image/v4_chart.png')
 
     st.write("### 2. YOLO V7")
     st.write('Dataset: ~', 5000, 'images')
@@ -129,26 +129,26 @@ elif choice == 'Object Detection':
     tab_detail, tab_score= st.tabs(["Detail score", "Score"])
     with tab_score:
         st.markdown('***Cunfusion matrix & Classification Report***')
-        st.image('v7.jpg', width = 700)
+        st.image('image/v7.jpg', width = 700)
     with tab_detail:
         st.markdown('***Training Process***')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('F1_curve.png', caption = 'F1_curve')
+            st.image('image/F1_curve.png', caption = 'F1_curve')
         with col2:
-            st.image('P_curve.png', caption = 'P_curve')
+            st.image('image/P_curve.png', caption = 'P_curve')
 
         col3, col4 = st.columns(2)
         with col3:
-            st.image('PR_curve.png', caption = 'PR_curve')
+            st.image('image/PR_curve.png', caption = 'PR_curve')
         with col4:
-            st.image('R_curve.png', caption = 'R_curve')
+            st.image('image/R_curve.png', caption = 'R_curve')
         
         col5, col6 = st.columns(2)
         with col5:
-            st.image('results.png', caption = 'results')
+            st.image('image/results.png', caption = 'results')
         with col6:
-            st.image('confusion_matrix.png', caption = 'confusion_matrix')
+            st.image('image/confusion_matrix.png', caption = 'confusion_matrix')
 
 elif choice == 'Text Classification':
     st.write("## 1) 2 Classes: POSITIVE - NEGATIVE")
@@ -166,7 +166,7 @@ elif choice == 'Text Classification':
         st.dataframe(df12)
 
         st.markdown('***Classification Report***')
-        st.image('2_classes_LSTM.jpg', width = 600)
+        st.image('image/new_2_classes_LSTM.jpg', width = 600)
 
 
     st.write("### *1.2 PhoBERT*")
@@ -183,7 +183,7 @@ elif choice == 'Text Classification':
         st.dataframe(df11)
 
         st.markdown('***Classification Report***')
-        st.image('2_classes_phoBERT.jpg', width = 600)
+        st.image('image/new_2_classes_phoBERT.jpg', width = 600)
 
     st.write("### *1.3 PhoBERT for Feature Extraction*")
     st.write('Dataset: ~', 2500, 'records')
@@ -201,7 +201,7 @@ elif choice == 'Text Classification':
         df1 = pd.DataFrame([[450, 54], [46, 450]])
         st.dataframe(df1)
         st.markdown('***Classification Report***')
-        st.image('2_classes_extract_phoBERT.jpg', width = 600)
+        st.image('image/new_2_classes_extract_phoBERT.jpg', width = 600)
 
 
 
