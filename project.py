@@ -67,10 +67,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.9708, 'Test loss: ', 0.1034)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('image/new_2_Classes_CNN_CF.jpg', width = 500)
+        st.image('image/new_2_classes_CNN_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('image/new_2_Classes_CNN_R.jpg', width = 600)
+        st.image('image/new_2_classes_CNN_R.jpg', width = 600)
 
     st.write("### 2. CNN - 5 Classes: FISH - GLASS - METAL_BATTERY - PLASTIC - OTHERS")
     st.write('Total params: ', 3735717)
@@ -83,10 +83,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.8637, 'Test loss: ', 0.4434)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('image/new_5_Classes_CNN_CF.jpg', width = 500)
+        st.image('image/new_5_classes_CNN_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('image/new_5_Classes_CNN_R.jpg', width = 600)
+        st.image('image/new_5_classes_CNN_R.jpg', width = 600)
 
     st.write("### 3. CNN & INCEPTION_V3 - 5 Classes: FISH - GLASS - METAL_BATTERY - PLASTIC - OTHERS")
     st.write('Dataset: ~', 6000, 'images')
@@ -99,10 +99,10 @@ if choice == 'Object Classification':
         st.write('Test accuracy: ', 0.8637, 'Test loss: ', 0.4434)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
-        st.image('image/new_5_Classes_pretrained_CF.jpg', width = 500)
+        st.image('image/new_5_classes_pretrained_CF.jpg', width = 500)
     with tab_classification_report:
         st.markdown('***Classification Report***')
-        st.image('image/new_5_Classes_pretrained_R.jpg', width = 600)
+        st.image('image/new_5_classes_pretrained_R.jpg', width = 600)
 
 
 elif choice == 'Object Detection':
