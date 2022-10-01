@@ -55,7 +55,7 @@ if choice == 'Object Classification':
         st.image('image/battery201.jpg', caption = 'Metal_Battery 🔋')
 
     with col4:
-        st.image('image/53I3SC0WUB17.jpg', caption = 'Plastic 🏭')
+        st.image('image/new_53I3SC0WUB17.jpg', caption = 'Plastic 🏭')
     st.write("### 1. CNN - 2 Classes: FISH - GARBAGE")
     st.write('Dataset: ~', 6000, 'images')
     st.write('Total params: ', 5409665)
