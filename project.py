@@ -171,7 +171,7 @@ elif choice == 'Text Classification':
         st.image('image/new_2_classes_LSTM.jpg', width = 600)
 
 
-    st.write("### [1.2 PhoBERT](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
+    st.write("### [1.2 PhoBERT](https://drive.google.com/drive/folders/14-yfo9Y6dRj_rq9FCBZm5cH4f-j1QQlI?usp=sharing)")
     st.write('Dataset: ~', 84000, 'records')
     tab_acc, tab_report = st.tabs(["Accuracy & Loss", "Detail"])
     
@@ -187,7 +187,7 @@ elif choice == 'Text Classification':
         st.markdown('***Classification Report***')
         st.image('image/new_2_classes_phoBERT.jpg', width = 600)
 
-    st.write("### [1.3 PhoBERT for Feature Extraction](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
+    st.write("### [1.3 PhoBERT for Feature Extraction](https://drive.google.com/drive/folders/14-yfo9Y6dRj_rq9FCBZm5cH4f-j1QQlI?usp=sharing)")
     st.write('Dataset: ~', 2500, 'records')
     tab_acc, tab_report, tab_lazy = st.tabs(["SVC Accuracy", "SVC Detail", 'Lazy Predict'])
     with tab_lazy:
@@ -206,7 +206,7 @@ elif choice == 'Text Classification':
         st.image('image/new_2_classes_extract_phoBERT.jpg', width = 600)
 
 
-    st.write("### [1.4 Spark (Naive Bayes)](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
+    st.write("### [1.4 Spark (Naive Bayes)](https://drive.google.com/drive/folders/14-yfo9Y6dRj_rq9FCBZm5cH4f-j1QQlI?usp=sharing)")
     st.write('Dataset: ~', 2500, 'records')
     tab_acc, tab_report = st.tabs(["SVC Accuracy", "SVC Detail"])
 
