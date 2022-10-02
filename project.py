@@ -36,7 +36,7 @@ m = [['NuSVC', 0.90, 0.90, 0.90, 0.90, 4.90],
 
 
 # Choice
-menu = ["Object Classification", "Object Detection", "Text Classification"]
+menu = ["Object Classification", "Object Detection", "Text Classification", "GUI & Demo & Mysql, ETL Demo"]
 choice = st.sidebar.selectbox('Content', menu)
 
 if choice == 'Object Classification':   
@@ -221,6 +221,10 @@ elif choice == 'Text Classification':
         st.write('Precision: ', 0.95)
         st.write('Recall: ', 0.91)
         st.write('F1_Score: ', 0.91)
+
+elif choice == "GUI & Demo & Mysql, ETL Demo":
+    st.subheader("[Slide & Demo &  Mysql, ETL Demo](https://drive.google.com/drive/folders/1ZquRdSN2xqzJ_i98qqWFqxJcKQbGkwYN?usp=sharing)")
+
 
 
 
