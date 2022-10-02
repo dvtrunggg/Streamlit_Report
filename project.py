@@ -40,7 +40,7 @@ menu = ["Object Classification", "Object Detection", "Text Classification"]
 choice = st.sidebar.selectbox('Content', menu)
 
 if choice == 'Object Classification':   
-    st.subheader("Image Classification")
+    st.subheader("[Object Classification](https://drive.google.com/drive/folders/1y1Jc702uyMdTYCG6ybPyecKxfrKPXWF0?usp=sharing)")
     st.write('### Fish 🐟 | Glass 🥂 | Metal_Battery 🔋 | Plastic 🏭')
     col1, col2 = st.columns(2)
 
@@ -95,8 +95,8 @@ if choice == 'Object Classification':
     tab_acc, tab_confusion_matrix, tab_classification_report = st.tabs(["Accuracy & Loss", "Confusion Matrix", "Classification Reprt"])
     with tab_acc:
         st.markdown('***Accuracy & Loss***')
-        st.write('Train accuracy: ', 0.9519, 'Train loss: ', 0.1284)
-        st.write('Test accuracy: ', 0.8637, 'Test loss: ', 0.4434)
+        st.write('Train accuracy: ', 0.98, 'Train loss: ', 0.1284)
+        st.write('Test accuracy: ', 0.97, 'Test loss: ', 0.4434)
     with tab_confusion_matrix:
         st.markdown('***Confusion Matrix***')
         st.image('image/new_5_classes_pretrained_CF.jpg', width = 500)
@@ -105,7 +105,8 @@ if choice == 'Object Classification':
         st.image('image/new_5_classes_pretrained_R.jpg', width = 600)
 
 
-elif choice == 'Object Detection':
+elif choice == 'Object Detection': 
+    st.subheader("[Object Detection](https://drive.google.com/drive/folders/1XZNCcqaz29DQyugNtOB1yqtKk1p1O1ss?usp=sharing)")
     st.subheader("Fish | Garbage")
 
     st.write("### 1. YOLO V4")
@@ -151,8 +152,9 @@ elif choice == 'Object Detection':
             st.image('image/confusion_matrix.png', caption = 'confusion_matrix')
 
 elif choice == 'Text Classification':
-    st.write("## 1) 2 Classes: POSITIVE - NEGATIVE")
-    st.write("### *1.1 RNN/LSTM*")
+    st.subheader('Text Classification')
+    st.write("## 1) Classes: POSITIVE - NEGATIVE & POSITIVE - NEUTRAL - NEGATIVE")
+    st.write("### [1.1 RNN/LSTM](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
     st.write('Dataset: ~', 84000, 'records')
     tab_acc, tab_report = st.tabs(["Accuracy & Loss", "Detail"])
     
@@ -169,7 +171,7 @@ elif choice == 'Text Classification':
         st.image('image/new_2_classes_LSTM.jpg', width = 600)
 
 
-    st.write("### *1.2 PhoBERT*")
+    st.write("### [1.2 PhoBERT](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
     st.write('Dataset: ~', 84000, 'records')
     tab_acc, tab_report = st.tabs(["Accuracy & Loss", "Detail"])
     
@@ -185,7 +187,7 @@ elif choice == 'Text Classification':
         st.markdown('***Classification Report***')
         st.image('image/new_2_classes_phoBERT.jpg', width = 600)
 
-    st.write("### *1.3 PhoBERT for Feature Extraction*")
+    st.write("### [1.3 PhoBERT for Feature Extraction](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
     st.write('Dataset: ~', 2500, 'records')
     tab_acc, tab_report, tab_lazy = st.tabs(["SVC Accuracy", "SVC Detail", 'Lazy Predict'])
     with tab_lazy:
@@ -202,6 +204,23 @@ elif choice == 'Text Classification':
         st.dataframe(df1)
         st.markdown('***Classification Report***')
         st.image('image/new_2_classes_extract_phoBERT.jpg', width = 600)
+
+
+    st.write("### [1.4 Spark (Naive Bayes)](https://drive.google.com/drive/folders/1pPq52rDSTMUHtcSa8Z0ZeBqFp40H0jFq?usp=sharing)")
+    st.write('Dataset: ~', 2500, 'records')
+    tab_acc, tab_report = st.tabs(["SVC Accuracy", "SVC Detail"])
+
+    with tab_acc:
+        st.markdown('***Accuracy***')
+        st.write('Train accuracy: ', 0.95)
+        st.write('Test accuracy: ', 0.91)
+    with tab_report:
+        st.markdown('***Confusion Matrix***')
+        df1 = pd.DataFrame([[1569, 74], [152, 1267]])
+        st.dataframe(df1)
+        st.write('Precision: ', 0.95)
+        st.write('Recall: ', 0.91)
+        st.write('F1_Score: ', 0.91)
 
 
 
